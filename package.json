@@ -1,0 +1,26 @@
+{
+  "name": "react-eb",
+  "version": "1.0.0",
+  "description": "Practice to deploy a ReactJS APP using EB",
+  "main": "react-eb-server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-ui": "cd react-eb-ui && npm run build",
+    "prestart": "npm run start-ui",
+    "start": "node react-eb-server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricklopcl/react-eb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricklopcl/react-eb/issues"
+  },
+  "homepage": "https://github.com/ricklopcl/react-eb#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "open": "^7.0.4"
+  }
+}
